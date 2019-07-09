@@ -38,6 +38,7 @@ function calculateData(test) {
 }
 
 function read(url) {
+  console.log(url)
   return fetch(url)
     .then(function(res){return res.text()})
     .then(function(res){return res.split("\n")}) 
